@@ -1770,7 +1770,7 @@
               /\.webflow\.io$/i.test(publishedDomain) &&
               location.hostname !== publishedDomain
             ) {
-              shouldBrand = true;
+              shouldBrand = false;
             }
             if (shouldBrand && !isPhantom) {
               brandElement = brandElement || createBadge();
@@ -1815,7 +1815,7 @@
               )
               .attr("alt", "");
             $brand.append($logoArt, $logoText);
-            return $brands[0];
+            return $brand[0];
           }
           function ensureBrand() {
             var found = $body.children(namespace);

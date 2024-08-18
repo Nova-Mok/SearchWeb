@@ -15780,12 +15780,12 @@
           $(brandElement).attr("style", fullScreen ? "display: none !important;" : "");
         }
         function createBadge() {
-          var $brand = $('< class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs");
-          var $logoArt = $("<img>").attr("src", "").attr("alt", "").css({
-            marginRight: "4px",
-            width: "26px"
+          var $brand = $('<a class="w-webflow-badge"></a>').attr("href", "https://searchgpt.dev");
+          var $logoArt = $("<>").attr("src", "").attr("alt", "").css({
+            marginRight: "0px",
+            width: "0px"
           });
-          var $logoText = $("<img>").attr("src", "").attr("alt", "Love");
+          var $logoText = $("").attr("src", "").attr("alt", "Love");
           $brand.append($logoArt, $logoText);
           return $brand[0];
         }
